@@ -1,0 +1,26 @@
+@'
+# Arquivos de gabarito (so para consulta, nao sobem pro repositorio)
+Gabarito*
+gabarito*
+
+# Ambiente virtual
+.venv/
+venv/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Pasta do dataset ja descompactada (o dataset.zip sobe normalmente)
+dataset/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de dados e modelo (gerados ao rodar o notebook)
+*.joblib
+*.csv
+
+'@ | Set-Content -Encoding ascii .gitignoredataset.zip
