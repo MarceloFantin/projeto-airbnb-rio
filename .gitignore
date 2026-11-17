@@ -24,3 +24,4 @@ Thumbs.db
 *.csv
 
 '@ | Set-Content -Encoding ascii .gitignoredataset.zip
+dataset.zip

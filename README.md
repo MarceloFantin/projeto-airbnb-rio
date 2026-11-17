@@ -10,7 +10,7 @@ No final o modelo foi colocado numa aplicação simples em Streamlit, onde você
 
 A base vem do Kaggle: [Airbnb Rio de Janeiro](https://www.kaggle.com/allanbruno/airbnb-rio-de-janeiro). São arquivos mensais de abril de 2018 a maio de 2020 (junho de 2018 não tem base), com os preços em reais.
 
-O `dataset.zip` está aqui no repositório. Se você baixar direto do Kaggle os números podem sair um pouco diferentes, porque a base pode ter sido atualizada.
+A base compactada tem quase 700 MB, mais do que o GitHub aceita por arquivo, então ela não está no repositório. É preciso baixar no Kaggle. Como a base pode ter sido atualizada por lá, os números podem sair um pouco diferentes dos meus.
 
 ## Como o projeto foi feito
 
@@ -35,7 +35,6 @@ Um ponto que ainda quero verificar: o mesmo anúncio aparece em vários meses da
 ## Arquivos
 
 ```
-dataset.zip                                       base de dados do Kaggle
 Solução Airbnb Rio.ipynb                          tratamento dos dados e treino do modelo
 DeployProjetoAirbnb.py                            aplicação em Streamlit
 DeployProjetoAirbnb.ipynb                         mesmo código do .py, usado para testar
@@ -58,7 +57,7 @@ O `plotly` precisa ser a versão 5.24 ou mais nova, por causa do `density_map`. 
 
 Depois:
 
-1. Descompacte o `dataset.zip` em uma pasta chamada `dataset`.
+1. Baixe a base no Kaggle, descompacte e coloque os arquivos csv em uma pasta chamada `dataset`, ao lado do notebook.
 2. Rode o `Solução Airbnb Rio.ipynb` do começo ao fim. Ele gera o `dados.csv` e o `modelo.joblib`. O treino do ExtraTrees demora, na minha máquina foram uns 12 minutos.
 3. Abra a aplicação:
 
